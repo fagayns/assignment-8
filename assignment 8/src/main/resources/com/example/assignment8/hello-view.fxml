@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="576.0" prefWidth="510.0" style="-fx-background-color: lightyellow;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.electronic_devicesss.HelloController">
+    <TabPane fx:id="tabPane" layoutX="126.0" layoutY="13.0">
+        <tabs>
+            <Tab text="Smartphone" />
+            <Tab text="Laptop">
+                <VBox spacing="10.0">
+                    <Label text="Name:" />
+                    <TextField fx:id="nameField" />
+                    <Label text="Price:" />
+                    <TextField fx:id="priceField" />
+                    <Label text="Weight (kg):" />
+                    <TextField fx:id="weightField" />
+                    <Label text="RAM Size (GB):" />
+                    <TextField fx:id="ramSizeField" />
+                    <Label text="Processor Type:" />
+                    <TextField fx:id="processorTypeField" />
+                </VBox>
+            </Tab>
+            <Tab text="Tablet">
+                <VBox spacing="10.0">
+                    <Label text="Name:" />
+                    <TextField fx:id="nameField" />
+                    <Label text="Price:" />
+                    <TextField fx:id="priceField" />
+                    <Label text="Weight (kg):" />
+                    <TextField fx:id="weightField" />
+                    <Label text="Battery Life (hrs):" />
+                    <TextField fx:id="batteryLifeField" />
+                    <Label text="Has Stylus:" />
+                    <CheckBox fx:id="hasStylusCheckBox" />
+                </VBox>
+            </Tab>
+        </tabs>
+    </TabPane>
+
+    <Button layoutX="22.0" layoutY="324.0" onAction="#onAddButtonClick" text="Add" />
+    <Button layoutX="434.0" layoutY="337.0" onAction="#onRemoveButtonClick" text="Remove" />
+    <ListView fx:id="listView" layoutX="-4.0" layoutY="376.0" prefHeight="200.0" prefWidth="510.0" style="-fx-background-color: lightblue;" />
+    <VBox layoutX="157.0" layoutY="45.0" spacing="10.0">
+        <Label text="Name:" />
+        <TextField fx:id="nameField" />
+        <Label text="Price:" />
+        <TextField fx:id="priceField" />
+        <Label text="Weight (kg):" />
+        <TextField fx:id="weightField" />
+        <Label text="Screen Size (inches):" />
+        <TextField fx:id="screenSizeField" />
+        <Label text="Camera Resolution (MP):" />
+        <TextField fx:id="cameraResolutionField" />
+    </VBox>
+</AnchorPane>
